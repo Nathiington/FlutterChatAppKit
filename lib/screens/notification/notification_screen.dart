@@ -20,14 +20,7 @@ class NotificationScreen extends StatelessWidget {
       body: Container(
           padding: const EdgeInsets.only(top: 90, left: 5, right: 5),
           decoration: BoxDecoration(
-               color: Colors.blue,
-        /*  gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: Theme.of(context).brightness == Brightness.light
-             //  ? Constants.lightBGColors
-               // : Constants.darkBGColors,
-          ),*/
+               color: Color(0xff1e2d51),
           ),
           child: Column(
             children: <Widget>[

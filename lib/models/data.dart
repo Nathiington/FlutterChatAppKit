@@ -6,35 +6,35 @@ import 'message_model.dart';
 
 class Data {
   static final User lukas = User(
-      id: 213921840,
+      id: 71000000,
       name: 'Lukas',
       imageUrl:
       'https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80',
       message: 'Hello World!');
 
   static final User tom = User(
-      id: 213921841,
+      id: 71000001,
       name: 'Tom',
       imageUrl:
       'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80',
       message: 'Hello World!');
 
   static final User neo = User(
-      id: 213921842,
+      id: 71000002,
       name: "Neo",
       imageUrl:
       'https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
       message: 'Good Day!');
 
   static final User bird = User(
-      id: 213921843,
+      id: 71000003,
       name: "Bird",
       imageUrl:
       'https://images.unsplash.com/photo-1522778147829-047360bdc7f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80',
       message: 'Cheep Cheep!');
 
   static final User dog = User(
-      id: 213921844,
+      id: 71000004,
       name: "Dog",
       imageUrl:
       'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=339&q=80',
@@ -166,7 +166,7 @@ class Data {
       'https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=312&q=80',
       time: '1',
       shareCount: 1,
-      likeCount: 5,
+      likeCount: 44,
     ),
     Feed(
       sender: neo,
@@ -175,7 +175,7 @@ class Data {
       'https://images.unsplash.com/photo-1507503343980-19961fa0ca17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60',
       time: '5',
       shareCount: 10,
-      likeCount: 5,
+      likeCount: 38,
     ),
     Feed(
       sender: tom,

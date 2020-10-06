@@ -12,21 +12,15 @@ class ProfileScreen extends StatelessWidget {
         elevation: 0.0,
         centerTitle: false,
         title: Text(
-          'Profile',
+          'Profile Settings',
           style: Constants.titleStyle,
         ),
       ),
       body: Container(
         padding: const EdgeInsets.only(top: 90),
         decoration: BoxDecoration(
-           color: Colors.blue,
-        /*  gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: Theme.of(context).brightness == Brightness.light
-             //  ? Constants.lightBGColors
-               // : Constants.darkBGColors,
-          ),*/
+           color: Color(0xff1e2d51),
+       
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -110,6 +104,44 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         'Chat',
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      )
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.white,
+                    height: 40,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.data_usage_outlined,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                       Text(
+                        'Data & Storage Usage',
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      )
+                    ],
+                  ),
+                  Divider(
+                    color: Colors.white,
+                    height: 40,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.help_outline_rounded,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 15,
+                      ),
+                       Text(
+                        'Help',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )
                     ],

@@ -9,7 +9,7 @@ class ChatScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Color(0xff1e2d51),
+        backgroundColor: Color(0xff13142e),
         centerTitle: false,
         elevation: 0.0,
         title: Text(
@@ -20,13 +20,13 @@ class ChatScreen extends StatelessWidget {
         actions: <Widget>[
            IconButton(
             icon: Icon(Icons.search),
-            color: Colors.white,
+            color: Color(0xffA5CDCC),
             iconSize: 30.0,
             onPressed: () {},
           ),
           IconButton(
             icon: Icon(Icons.add_circle_outline),
-            color: Colors.white,
+            color: Color(0xffA5CDCC),
             iconSize: 30.0,
             onPressed: () {},
           )
@@ -36,7 +36,7 @@ class ChatScreen extends StatelessWidget {
         padding: const EdgeInsets.only(top: 90),
         decoration: BoxDecoration(
           //color for main part of the screen
-          color: Colors.white,
+          color: Color(0xff1e2d51),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),

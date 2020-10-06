@@ -8,7 +8,7 @@ class Constants {
   );
 
   static const TextStyle titleStyle = TextStyle(
-    color: Colors.white,
+    color: Color(0xffA5CDCC),
     fontFamily: 'SansitaSwashed',
     fontSize: 28.0,
     letterSpacing: 1.5,

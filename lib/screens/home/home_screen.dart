@@ -18,14 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-          topRight: Radius.circular(45),
-          topLeft: Radius.circular(45),
-        ),
-        child: BottomNavigationBar(
+      bottomNavigationBar: 
+         BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Theme.of(context).primaryColor,
+          backgroundColor: Color(0xff13142e),
           currentIndex: _page,
           onTap: (idx) {
             _pageController.jumpToPage(idx);
@@ -34,11 +30,11 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.message,
-                color: Colors.white,
+                color: Color(0xff293e6a),
               ),
               activeIcon: Icon(
                 Icons.message,
-                color: Theme.of(context).accentColor,
+                color: Color(0xffA5CDCC),
               ),
               title: Container(
                 height: 0.0,
@@ -47,11 +43,11 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.notifications,
-                color: Colors.white,
+                color:Color(0xff293e6a),
               ),
               activeIcon: Icon(
                 Icons.notifications,
-                color: Theme.of(context).accentColor,
+                color:Color(0xffA5CDCC),
               ),
               title: Container(
                 height: 0.0,
@@ -60,11 +56,11 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle,
-                color: Colors.white,
+                color: Color(0xff293e6a),
               ),
               activeIcon: Icon(
                 Icons.account_circle,
-                color: Theme.of(context).accentColor,
+                color: Color(0xffA5CDCC),
               ),
               title: Container(
                 height: 0.0,
@@ -72,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
             )
           ],
         ),
-      ),
+      
       body: PageView(
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,

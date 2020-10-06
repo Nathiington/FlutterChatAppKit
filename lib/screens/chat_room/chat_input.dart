@@ -37,7 +37,7 @@ class _ChatInputState extends State<ChatInput> {
           Container(
             child: IconButton(
               icon: Icon(Icons.insert_emoticon),
-              color: Theme.of(context).accentColor,
+              color: Colors.white,
               onPressed: () {},
             ),
           ),

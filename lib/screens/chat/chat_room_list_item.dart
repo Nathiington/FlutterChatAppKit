@@ -53,7 +53,7 @@ class ChatRoomListItem extends StatelessWidget {
                 Text(
                   chatRoom.sender.name,
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 16.0,
                   ),
@@ -62,7 +62,7 @@ class ChatRoomListItem extends StatelessWidget {
                   chatRoom.messages.last.text,
                   maxLines: 2,
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 )
               ],
