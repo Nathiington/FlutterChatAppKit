@@ -9,14 +9,41 @@ class ChatRoomListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      decoration: BoxDecoration(
+         border: Border(
+           top:BorderSide(
+           color: Color(0xff909090),
+           width: 0.5,
+           ),
+           bottom:BorderSide(
+           color: Color(0xff909090),
+           width: 0.5,
+           ),
+         ),
+       /* boxShadow: [
+        /*  BoxShadow (
+            color: const Color(0xcc000000),
+            offset: Offset(0, 2),
+            blurRadius: 4,
+          ),*/
+         BoxShadow (
+            color: const Color(0x30000000),
+            offset: Offset(0, 6),
+            blurRadius: 30,
+          ),
+        ],*/ 
+       ),
+      padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 5.0),
       child: Row(
+        
         children: <Widget>[
+          
           CircleAvatar(
             backgroundImage: NetworkImage(chatRoom.sender.imageUrl),
             radius: 30.0,
           ),
           SizedBox(
+            
             width: 10,
           ),
           Expanded(
@@ -26,7 +53,7 @@ class ChatRoomListItem extends StatelessWidget {
                 Text(
                   chatRoom.sender.name,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 16.0,
                   ),
@@ -35,7 +62,7 @@ class ChatRoomListItem extends StatelessWidget {
                   chatRoom.messages.last.text,
                   maxLines: 2,
                   style: TextStyle(
-                    color: Colors.grey[200],
+                    color: Colors.black,
                   ),
                 )
               ],

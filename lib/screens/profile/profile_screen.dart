@@ -19,13 +19,14 @@ class ProfileScreen extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.only(top: 90),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
+           color: Colors.blue,
+        /*  gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: Theme.of(context).brightness == Brightness.light
-                ? Constants.lightBGColors
-                : Constants.darkBGColors,
-          ),
+             //  ? Constants.lightBGColors
+               // : Constants.darkBGColors,
+          ),*/
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),

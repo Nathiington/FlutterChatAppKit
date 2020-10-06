@@ -9,18 +9,19 @@ class Constants {
 
   static const TextStyle titleStyle = TextStyle(
     color: Colors.white,
-    fontSize: 25.0,
+    fontFamily: 'SansitaSwashed',
+    fontSize: 28.0,
     letterSpacing: 1.5,
     fontWeight: FontWeight.bold,
   );
 
-  static const Color darkPrimary = Color(0xff312F45);
-  static const Color darkAccent = Color(0xff1176E8);
-  static const Color darkBG = Color(0xff1F2533);
+  static const Color darkPrimary = Color(0xff23243a);
+  static const Color darkAccent = Color(0xff293e6a);
+  static const Color darkBG = Color(0xff1e2d51);
 
-  static const Color lightPrimary = Colors.white;
-  static const Color lightAccent = Colors.amber;
-  static const Color lightBG = Color(0xFFEEEEEE);
+  static const Color lightPrimary = Color(0xff93d8e7);
+  static const Color lightAccent = Color(0xff293e6a);
+  static const Color lightBG = Color(0xFFbfeef4);
 
   Color w = Colors.grey[200];
   static const List<Color> darkBGColors = [darkBG, darkBG];
@@ -32,6 +33,7 @@ class Constants {
   ];
 
   static final ThemeData lightTheme = ThemeData(
+    fontFamily: 'SourceSansPro',
     brightness: Brightness.light,
     backgroundColor: lightBG,
     primaryColor: lightPrimary,
@@ -43,6 +45,7 @@ class Constants {
   );
 
   static final ThemeData darkTheme = ThemeData(
+    fontFamily: 'SourceSansPro',
     brightness: Brightness.dark,
     backgroundColor: darkBG,
     primaryColor: darkPrimary,

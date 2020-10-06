@@ -34,6 +34,16 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  fonts:
+    - family: SansitaSwashed
+      fonts:
+        - asset: fonts/SansitaSwashed-Regular.ttf
+        - asset: fonts/SansitaSwashed-Bold.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
+        - asset: fonts/SourceSansPro-Bold.ttf
+         # style: Source Sans Pro
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

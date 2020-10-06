@@ -9,14 +9,21 @@ class ChatScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xff1e2d51),
         centerTitle: false,
         elevation: 0.0,
         title: Text(
-          'Chat',
+          'U up?',
           style: Constants.titleStyle,
+          
         ),
         actions: <Widget>[
+           IconButton(
+            icon: Icon(Icons.search),
+            color: Colors.white,
+            iconSize: 30.0,
+            onPressed: () {},
+          ),
           IconButton(
             icon: Icon(Icons.add_circle_outline),
             color: Colors.white,
@@ -28,43 +35,15 @@ class ChatScreen extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.only(top: 90),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: Theme.of(context).brightness == Brightness.light
-                ? Constants.lightBGColors
-                : Constants.darkBGColors,
-          ),
+          //color for main part of the screen
+          color: Colors.white,
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                child: TextFormField(
-                  autofocus: false,
-                  onChanged: (v) {},
-                  decoration: InputDecoration(
-                    focusColor: Colors.white,
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.grey,
-                    ),
-                    hintText: 'Search',
-                    hintStyle: TextStyle(
-                      color: Colors.grey,
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    enabledBorder: Constants.border,
-                    disabledBorder: Constants.border,
-                    border: Constants.border,
-                    errorBorder: Constants.border,
-                    focusedErrorBorder: Constants.border,
-                    focusedBorder: Constants.border,
-                  ),
-                ),
+                padding: const EdgeInsets.symmetric(vertical: 0),
               ),
               Expanded(
                 child: ListView.builder(
@@ -77,7 +56,8 @@ class ChatScreen extends StatelessWidget {
                         },
                         child: ChatRoomListItem(
                           chatRoom: Data.chatRooms[index],
-                        ));
+                        )
+                      );
                   },
                   itemCount: Data.chatRooms.length,
                 ),

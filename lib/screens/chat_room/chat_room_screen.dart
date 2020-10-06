@@ -61,20 +61,21 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
             icon: Icon(
               Icons.more_horiz,
               color: Colors.white,
-            ),
+            ), onPressed: () {  },
           )
         ],
       ),
       body: Container(
         padding: const EdgeInsets.only(top: 80),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
+            color: Colors.blue,
+        /*  gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: Theme.of(context).brightness == Brightness.light
-                ? Constants.lightBGColors
-                : Constants.darkBGColors,
-          ),
+             //  ? Constants.lightBGColors
+               // : Constants.darkBGColors,
+          ),*/
         ),
         child: Column(
           children: <Widget>[

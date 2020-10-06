@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.message,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               activeIcon: Icon(
                 Icons.message,
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.notifications,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               activeIcon: Icon(
                 Icons.notifications,
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle,
-                color: Colors.grey,
+                color: Colors.white,
               ),
               activeIcon: Icon(
                 Icons.account_circle,
